@@ -1,0 +1,42 @@
+name: Bug Report
+description: Report a problem with the Microsoft C++ Language Server.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe what happened and what you expected to happen. Include any steps to reproduce the issue.
+    validations:
+      required: true
+  - type: input
+    id: os-and-arch
+    attributes:
+      label: Operating system and architecture
+      description: For example, "Windows on x64" or "Linux (glibc based) on arm64".
+    validations:
+      required: true
+  - type: input
+    id: mscppls-version
+    attributes:
+      label: Microsoft C++ Language Server version
+      description: Run `mscppls --version` to find this.
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: copilot-cli-version
+    attributes:
+      label: GitHub Copilot CLI version
+      description: Run `copilot --version` to find this.
+      placeholder: e.g. 1.0.0
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: "(optional) Paste any relevant log output from the `$TEMP/mscppls` directory. Review logs for sensitive information before attaching."
+      render: shell
+    validations:
+      required: false

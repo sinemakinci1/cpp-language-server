@@ -1,0 +1,11 @@
+name: Feature Request
+description: Suggest an improvement to the Microsoft C++ Language Server.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Your idea
+      description: What would improve the Microsoft C++ Language Server? How would it help you?
+    validations:
+      required: true
