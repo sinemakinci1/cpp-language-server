@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "name": "cpp-language-server",
+  "description": "Navigate and interact with your C++ code using the Microsoft C++ Language Server.",
+  "version": "0.1.0",
+  "license": "See EULA/LICENSE.txt in @microsoft/cpp-language-server NPM package",
+  "repository": "https://github.com/microsoft/cpp-language-server",
+  "keywords": [
+    "cpp",
+    "c++",
+    "refactoring",
+    "code-analysis",
+    "lsp",
+    "language-server"
+  ],
+  "skills": [],
+  "lspServers": {
+    "cpp": {
+      "command": "npx",
+      "args": [
+        "@microsoft/cpp-language-server"
+      ],
+      "fileExtensions": {
+        ".cpp": "cpp",
+        ".cxx": "cpp",
+        ".c": "cpp",
+        ".cc": "cpp",
+        ".hpp": "cpp",
+        ".hxx": "cpp",
+        ".hh": "cpp",
+        ".h": "cpp"
+      },
+      "requestTimeoutMs": 1000000
+    }
+  }
+}
