@@ -13,7 +13,9 @@
     "lsp",
     "language-server"
   ],
-  "skills": [],
+  "skills": [
+    "./skills/generate-compile-commands"
+  ],
   "lspServers": {
     "cpp": {
       "command": "npx",
